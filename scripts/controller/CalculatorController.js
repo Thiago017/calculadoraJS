@@ -1,4 +1,4 @@
-class CalcController {
+class CalculatorController {
 
     constructor() {
 
@@ -75,7 +75,7 @@ class CalcController {
     playAudio() {
 
         if (this._audioOnOff) {
-            
+
             this._audio.currentTime = 0;
             this._audio.play();
 
@@ -127,7 +127,7 @@ class CalcController {
                 case 'c':
                     if (e.ctrlKey) this.copyToClipboard();
                     break;
-                
+
             }
 
         });
@@ -381,7 +381,7 @@ class CalcController {
                 break;
             default:
                 this.setError();
-            
+
         }
 
     }
@@ -451,7 +451,7 @@ class CalcController {
         }
 
         this._displayCalcEl.innerHTML = value;
-        
+
     }
 
     get currentDate() {
